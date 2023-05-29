@@ -54,14 +54,16 @@ class UsersController extends Controller
         $data = $request->all();
 
         $request->validate([
-            'name' => ['required', 'string', 'max:255'],
+             'firstname' => ['required', 'string', 'max:255'],
+              'lastname' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             
         ]);
 
         $result = User::create([
-            'name' => $data['name'],
+            'firstname' => $data['firstname'],
+            'lastname'=>$data['lastname'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
              

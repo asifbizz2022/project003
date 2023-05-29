@@ -20,7 +20,7 @@ Route::get('/update-form', function(){
 Route::get('/dashboard', [UsersController::Class , 'dashboard'])->middleware('checkLogin');
 
 Route::get('/login/page', [UsersController::Class, 'login_page']);
-Route::get('/register/page',[UsersController::Class, 'register_page']);  
+Route::get('/register/page',[UsersController::Class, 'register_page'])->name('register.new');  
 Route::post('/login', [UsersController::Class, 'login'])->name('login');
 Route::post('/register', [UsersController::Class, 'register'])->name('register'); 
 Route::post('/upload', [UploadController::Class,'store']);  

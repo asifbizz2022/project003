@@ -85,7 +85,9 @@
                 contentType :false, 
                 processData: false,
                 success :function(response){
-                    alert('Profile Updated');
+                    if(confirm('Profile Updated')){
+                        location.reload();
+                    }
                 },
                 error : function(response){
                     $.each(response.responseJSON.errors, function(key, value){

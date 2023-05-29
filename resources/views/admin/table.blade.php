@@ -13,7 +13,8 @@
             <thead>
                 <tr>
                     <th>Action</th>
-                    <th>Name</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
                     <th>Email</th> 
                 </tr>
             </thead> 
@@ -37,8 +38,7 @@
       </div>
       <div class="modal-body">
         <div class="">
-            <!-- START PAGE CONTENT-->
-            
+            <!-- START PAGE CONTENT--> 
             <div class="page-content fade-in-up">
                 <div class="row">
                     <div class="col-lg-3 col-md-4">
@@ -104,7 +104,8 @@
                     }
                 } , 
                 
-                {data : 'name'},
+                {data : 'firstname'},
+                {data : 'lastname'},
                 {data : 'email'},
 
             ]

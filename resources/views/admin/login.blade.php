@@ -55,10 +55,10 @@
                 <label class="ui-checkbox ui-checkbox-info">
                     <input type="checkbox">
                     <span class="input-span"></span>Remember me</label>
-                
-               @if (Route::has('password.request'))
+                 <a href="{{ route('register.new') }}">Register New</a>  
+               <!--  @if (Route::has('password.request'))
                   <a href="{{ route('password.request') }}">Forgot password?</a>  
-                @endif  
+                @endif   -->
             </div>
             <div class="form-group">
                 <button class="btn btn-info btn-block login-btn" type="button">Login</button>

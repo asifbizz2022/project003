@@ -28,8 +28,15 @@
                 <div class="col-12">
                     <div class="form-group">
                         <div class="input-group-icon right">
-                        <input id="name" type="text" class="form-control " name="name" value="{{ old('name') }}"  autocomplete="name" autofocus placeholder="Name">
-
+                        <input id="name" type="text" class="form-control " name="firstname" value="{{ old('firstname') }}"  autocomplete="name" autofocus placeholder="First Name"> 
+                       
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-group">
+                        <div class="input-group-icon right">
+                        <input id="name" type="text" class="form-control " name="lastname" value="{{ old('lastname') }}"  autocomplete="name" autofocus placeholder="Last Name"> 
                        
                         </div>
                     </div>
